@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gilroy', sans-serif !important;
+}
+
+nav{
+display: flex;
+justify-content:space-between;
+align-items: center;
+background-color:black;
+height:10vh;
+}
+
+ nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+h1{
+    font-size: 30px;
+    color: white;
+}
+
+@media(max-width:340px){
+    h1{
+        font-size: 20px;
+    }
+}
+nav .logo .nav-links{
+    display: flex;
+    list-style: none;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav button{
+    background-color:#473BF0;
+    padding:6px;
+    color: #ffff;
+    border-radius: 2px;
+    border-style: none;
+    margin-right: 5px;
+}
+
+
+
+.nav-button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.burger{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.burger .line{
+    height: 3px;
+    width: 24px;
+    background-color:white;
+    margin: 4px;
+}
+
+
+@media (max-width:650px){
+    nav .logo .nav-links, nav button{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+
+}
+
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 90vh;
+    width: 100%;
+    background-image:url('business-people-casual-meeting\ \(1\).jpg');
+    background-size: cover;
+}
+
+.hero-section .hero-content{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    height: 30vh;
+    width: 400px;
+    gap: 10px;
+}
+
+.hero-content h1{
+    font-size:40px;
+    font-weight:900;
+    margin-left: 10px;
+}
+.hero-content p{
+    color:darkgray;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.hero-content button{
+    background-color: #473BF0;
+    color: white;
+    padding: 10px;
+    border-style: none;
+    border-radius: 3px;
+}
+
+
+.card-section{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    color: black;
+    padding:50px 0px;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+.card-section h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.card p{
+    color: darkgray;
+    font-weight:400;
+}
+
+.card-section .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 250px;
+    text-align: start;
+}
+
+
+/* services section */
+.services-section{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding:25px 0px;
+    gap: 20px;
+
+}
+
+.services-heading{
+    display: flex;
+    justify-content: center;
+     text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-section h1{
+    color: black;
+}
+
+
+.images-section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+}
+.images-section img{
+    height: 150px;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+
+}
+
+.services-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-image{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* choose-us-image */
+
+
+.choose-us-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    width: 100%;
+    padding-top:50px;
+}
+
+.choose-us-numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    
+}
+
+.choose-us-heading{
+    color:black;
+    padding: 20px 0px;
+}
+
+.choose-us-image{
+    height: 250px;
+    width: 250px;
+    border-radius: 4px;
+}
+
+.choose-us-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+} 
+
+.number-heading{
+    color: black;
+    font-size:16px;
+    text-align: start;
+}
+.boxes p{
+    text-align: start;
+}
+
+.boxes{
+    display: flex;
+    gap: 20px;
+}
+
+.number h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+@media (max-width:800px){
+    .choose-us-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+}
+
+
+/* future section */
+.feauture-section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:#473BF0;
+    height: 10vh;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+
+}
+
+.feauture-section button{
+    background-color: white;
+    border-radius: 8px;
+    height: 20px;
+    width: 36px;
+    font-size: 10px;
+    border: none;
+    color: #473BF0;
+   
+}
+
+@media(max-width:426px){
+    .feauture-section button{
+        display:none;
+    }
+}
+.feauture-section p{
+    color: white;
+}
+
+.feauture-section span{
+    text-decoration: underline;
+}
+
+
+/* company section */
+
+.company-section{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 60px 0px;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+}
+
+.company-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.company-section img{
+    width: 100px;
+}
+
+.company-mini img{
+    height: 35px;
+   width: 60px;
+    border-radius: 80%;
+}
+
+.company-mini{
+display: flex;
+gap: 12px;
+}
+
+
+.company-3{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+
+/* consultancy-container */
+
+.consultancy{
+    background-image: url('water-drop-flower-bud.jpg');
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.consultancy-content{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.consultancy-content h1{
+    font-weight:bolder;
+    font-size: 24px;
+}
+
+
+.consultancy p{
+color:darkgray;
+font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: white;
+    justify-content: center;
+    padding: 10px;
+    gap:8px;
+    border-radius: 8px;
+
+
+}
+
+form button{
+    background-color: #473BF0;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    color: aliceblue;
+}
+
+form label{
+    color:black;
+    font-size: 14px;
+    font-weight: 900;
+    
+ 
+}
+form input{
+    height: 40px;
+    border-width: 0px, 0px, 0px, 0px;
+    border-style: solid;
+    border-color: #E7E9ED; 
+    border-radius: 4px;
+    padding: 10px;
+  
+}
+
+@media (max-width:609px){
+    .consultancy{
+        height: 120vh;
+        gap: 20px;  
+    }
+    
+
+}
+
+
+/* subscribe-section */
+
+.subscribe-section{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 30vh;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.subscribe-section h1{
+    color: black;
+    font-size: 18px;
+}
+.subscribe-section input{
+    height: 40px;
+    border-width: 0px, 0px, 0px, 0px;
+    border-style:solid;
+    border-color: #E7E9ED; 
+    border-radius: 4px;
+    padding: 10px;
+}
+.subscribe-section button{
+    height: 40px;
+    background-color: #473BF0;
+    border: none;
+    border-radius: 6px;
+    width: 100px;
+    color: aliceblue;
+}
+
+
+/* buttom-section */
+.buttom-section{
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+    gap: 60px;
+   
+    
+}
+.buttom-section li{
+    list-style: none;
+    padding-bottom: 10px;
+    font-weight:300;
+}
+.buttom-section span{
+    color:blue;
+    font-weight: bolder;
+}
+.buttom-section p{
+    color:darkgray;
+    padding-bottom: 15px;
+}
+
+
+.buttom-horizontal-line{
+    display: flex;
+    justify-content: center;
+}
+
+.buttom-horizontal-line hr{
+    width: 80%;
+}
+
+.last{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 12px;
+}
+
+.insta-logo{
+    display: flex;
+    gap:12px;
+}
